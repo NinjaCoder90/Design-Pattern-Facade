@@ -37,10 +37,10 @@ interface to the ordering system, payment gateways, and various delivery service
 
 ##HOW TO IMPLEMENT
 
-Instead of making your code work with dozens of the framework classes directly, you create a facade class 
-which encapsulates that functionality and hides it from the rest of the code. This structure also helps you 
-to minimize the effort of upgrading to future versions of the framework or replacing it with another one. The 
-only thing you’d need to change in your app would be the implementation of the facade’s methods.
+Instead of making your code work with dozens of the framework classes directly, creating a facade class 
+encapsulates all the functionalities and hides them from the rest of the code. This structure is also helpful 
+when upgrading or changing the version of the framework. 
+In fact, the only changes you’ll need are the implementation of the facade’s methods.
 
 1. Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides. You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
 
