@@ -8,7 +8,7 @@ adds an interface to existing system to hide its complexities.
 This pattern involves a single class which provides simplified methods 
 required by client and delegates calls to methods of existing system classes.
 
-![img.png](img.png)
+![img.png](resources/img.png)
 
 Facade: Provide a unified interface to a set of interfaces in a 
 subsystem. Facade defines a higher-level interface that makes the 
@@ -36,7 +36,7 @@ Having a facade is handy when you need to integrate your app with a sophisticate
 
 For instance, an app that uploads short funny videos with cats to social media could potentially use a professional video conversion library. However, all that it really needs is a class with the single method encode(filename, format). After creating such a class and connecting it with the video conversion library, you’ll have your first facade.
 
-![img_7.png](img_7.png)
+![img_7.png](resources/img_7.png)
 
 ###HOW TO IMPLEMENT
 
