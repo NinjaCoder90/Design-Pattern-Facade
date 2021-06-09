@@ -1,7 +1,7 @@
 ##FACADE DESIGN PATTERN
 Structural Patterns: deal with the composition of classes or objects.
 Facade pattern hides the complexities of the system and provides an 
-interface to the client using which the client can access the system. 
+interface where the client can access to the system. 
 This type of design pattern comes under structural pattern as this pattern 
 adds an interface to existing system to hide its complexities.
 
@@ -13,7 +13,6 @@ required by client and delegates calls to methods of existing system classes.
 Facade: Provide a unified interface to a set of interfaces in a 
 subsystem. Facade defines a higher-level interface that makes the 
 subsystem easier to use.
-Facade defines a higher-level interface that makes the subsystem easier to use.
     
 ##PROBLEM
 Imagine that you must make your code work with a broad set of 
