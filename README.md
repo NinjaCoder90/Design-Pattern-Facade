@@ -34,20 +34,26 @@ When you call a shop to place a phone order, an operator is your facade to all
 services and departments of the shop. The operator provides you with a simple voice
 interface to the ordering system, payment gateways, and various delivery services.
 
-##HOW TO IMPLEMENT
-
-Instead of making your code work with dozens of the framework classes directly, creating a facade class 
-encapsulates all the functionalities and hides them from the rest of the code. This structure is also helpful 
-when upgrading or changing the version of the framework. 
+---
+Instead of making your code work with dozens of the framework classes directly, creating a facade class
+encapsulates all the functionalities and hides them from the rest of the code. This structure is also helpful
+when upgrading or changing the version of the framework.
 In fact, the only changes you’ll need are the implementation of the facade’s methods.
+
+
+##HOW TO IMPLEMENT
 
 1. Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides. You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
 
+
 2. Declare and implement this interface in a new facade class. The facade should redirect the calls from the client code to appropriate objects of the subsystem. The facade should be responsible for initializing the subsystem and managing its further life cycle unless the client code already does this.
+
 
 3. To get the full benefit from the pattern, make all the client code communicate with the subsystem only via the facade. Now the client code is protected from any changes in the subsystem code. For example, when a subsystem gets upgraded to a new version, you will only need to modify the code in the facade.
 
+
 4. If the facade becomes too big, consider extracting part of its behavior to a new, refined facade class.
+
 
 ##TRADE-OFFS
 The facade pattern doesn't force us to unwanted tradeoffs, because it only adds additional layers of abstraction.
