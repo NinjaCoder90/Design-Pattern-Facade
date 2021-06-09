@@ -15,7 +15,7 @@ subsystem. Facade defines a higher-level interface that makes the
 subsystem easier to use.
 Facade defines a higher-level interface that makes the subsystem easier to use.
     
-###PROBLEM
+##PROBLEM
 Imagine that you must make your code work with a broad set of 
 objects that belong to a sophisticated library or framework. Ordinarily, 
 you’d need to initialize all of those objects, keep track of dependencies, 
@@ -24,12 +24,7 @@ As a result, the business logic of your classes would become
 tightly coupled to the implementation details of 3rd-party classes, 
 making it hard to comprehend and maintain.
 
-#####Real World Scenario 
-When you call a shop to place a phone order, an operator is your facade to all 
-services and departments of the shop. The operator provides you with a simple voice 
-interface to the ordering system, payment gateways, and various delivery services.
-
-###SOLUTION
+##SOLUTION
 A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.
 
 Having a facade is handy when you need to integrate your app with a sophisticated library that has dozens of features, but you just need a tiny bit of its functionality.
@@ -38,8 +33,17 @@ For instance, an app that uploads short funny videos with cats to social media c
 
 ![img_7.png](resources/img_7.png)
 
-###HOW TO IMPLEMENT
+##Real World Scenario
+When you call a shop to place a phone order, an operator is your facade to all
+services and departments of the shop. The operator provides you with a simple voice
+interface to the ordering system, payment gateways, and various delivery services.
 
+##HOW TO IMPLEMENT
+
+Instead of making your code work with dozens of the framework classes directly, you create a facade class 
+which encapsulates that functionality and hides it from the rest of the code. This structure also helps you 
+to minimize the effort of upgrading to future versions of the framework or replacing it with another one. The 
+only thing you’d need to change in your app would be the implementation of the facade’s methods.
 
 1. Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides. You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
 
@@ -49,6 +53,6 @@ For instance, an app that uploads short funny videos with cats to social media c
 
 4. If the facade becomes too big, consider extracting part of its behavior to a new, refined facade class.
 
-###TRADE-OFFS
+##TRADE-OFFS
 The facade pattern doesn't force us to unwanted tradeoffs, because it only adds additional layers of abstraction.
 Sometimes the pattern can be overused in simple scenarios, which will lead to redundant implementations.
