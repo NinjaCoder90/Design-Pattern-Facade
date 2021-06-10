@@ -2,10 +2,11 @@
 Structural Patterns: deal with the composition of classes or objects.
 Facade pattern hides the complexities of the system and provides an 
 interface where the client can access to the system. 
+
 This type of design pattern comes under structural pattern as this pattern 
 adds an interface to existing system to hide its complexities.
 
-This pattern involves a single class which provides simplified methods 
+The pattern involves a single class which provides simplified methods 
 required by client and delegates calls to methods of existing system classes.
 
 ![img.png](resources/img.png)
