@@ -27,8 +27,6 @@ making it hard to comprehend and maintain.
 A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.
 Having a facade is handy when you need to integrate your app with a sophisticated library that has dozens of features, but you just need a tiny bit of its functionality.
 
-![img_7.png](resources/img_7.png)
-
 ##Real World Scenario
 When you call a shop to place a phone order, an operator is your facade to all
 services and departments of the shop. The operator provides you with a simple voice
